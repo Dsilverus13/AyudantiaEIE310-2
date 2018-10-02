@@ -2,7 +2,7 @@ clear all
 clc
 fx = 0.05; % frecuencia [c/m] de x
 fs = 0.05; % frecuencia [c/m] de las sinusoides de la DTFT
-for pxg = -180 : 30 : 180, % fase de x en grados
+for pxg = 0 : 60 : 180, % fase de x en grados
 px = (pi/180) * pxg; % fase de x en rad
 n = [0 : 1 : 19]; % vector n
 x = cos(2*pi * fx * n - px); % secuencia x
